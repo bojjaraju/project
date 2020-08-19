@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table border="2">
+<tr><th>Sid</th>
+    <th>Sname</th>
+    <th>Sadd</th>
+    <th>Scontact</th>
+</tr>
+{% for rec in records %}
+  <tr><td>{{rec.sid}}</td>
+      <td>{{rec.sname}}</td>
+      <td>{{rec.sadd}}</td>
+      <td>{{rec.scontact}}</td>
+  </tr>
+{% endfor %}
+</table>
+</body>
+</html> 
